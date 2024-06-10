@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <title>Bootstrap Example</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    .container {
+  position: relative;
+  text-align: left;
+  color: rgb(252, 240, 240);}
+  .abc{
+  position: absolute;
+  top: 70px;
+  left: 140px;
+  font-size: larger;
+  font-weight: 1000px;
+  text-align: center;}
+  .container1{
+  position: absolute;
+  top: 300px;
+  left: 190px;
+  font-size: larger;
+}
+.top-right {
+  position: absolute;
+  top: 40px;
+  right: 52px;
+  color: blue;
+}
+.centered {
+  position: absolute;
+  top: 200px;
+  right: 2px;
+  color: black;
+}
+.button{
+            width:200px;
+            height:30px;
+            background:rgb(87,172,225);
+            border:none;
+            outline:none;
+            cursor:pointer;
+            color:white;
+            font-weight:500;
+        }
+        .box{
+            border:3px solid;
+            border-color: rgb(223,206,206);
+            width:450px;
+            height: 500px;
+            background: rgba(222,196,196,0.25);
+            backdrop-filter: blur(5px);
+            margin-top:5%;
+            text-align: right;
+        }
+        .str{
+          width: 450px;
+          height: 560px;
+        }
+</style>
+<script>
+         
+  function loginValidation() {
+             
+    var uname = document.myform.username.value;
+              
+    var password = document.myform.password.value;
+              if(uname==null || uname=="") {
+                alert("Name cant be blank")
+                return false;  
+             } else if (password.length<6){
+                alert("Password Must be 6 letters")
+                return false;
+             }  
+             return true                 
+          }           
+       </script>
+      
+    <body>
+           <div class="container">          
+                   <img src="login.jpg" class="img-rounded" alt="There is No Image" width="534" height="736">
+                   <div class="abc"><img src="red.jpg" width="50" height="50"><h2>Welcome to Pet Place</h2><p>We Welcome Your Family</p></div><br>
+                   <center>  <div class="container1"><h3>We Welcome You,<br> With Our Open <br>Hearts And Paws</h3><br>
+                    <img src="teddy.jpg" width="200" height="200"></div></center><br>
+                        <center>
+                            <div class="top-right"><h1>Sign Up</h1><br>
+                            <div class="box">
+                               <center> <form name="myform" action="loginthanks.html" 	onsubmit="return loginValidation(this)">
+ 
+                                <br>
+                                  <input type="text" name="username" placeholder="Full Name"><br>
+                                  <br><input type="tel" name="personal" id="perl"pattern="[0-9]{10}" title="the 10 digits number"placeholder="Phone Number"><br>
+                                  <br><input type="email" name="email" placeholder="Email Address"><br>
+                                  <br> <input type="password" name="password" placeholder="Create Password"><br>
+                                  <br><div class="str"><select name="gender"><option value="gender">Select Gender</option>
+                                    <option value="Male">Male</option> 
+                                    <option value="Female">Female</option>
+                                    <option value="other">Other</option></div></select>
+                                    <br><br><input type="city" name="city" placeholder="City"><br>
+                                  <br>  Are you a Pet Parent?<br>
+                                    <input type="radio" name="pet">Yes
+        <input type="radio" name="pet">No<br>
+                                    <br><button type="submit" class="button">Create an account</button>                                    
+                                </form></center>
+                            </div>
+                            </div>
+                        </center>
+</div>
+</body>
+</html>
+</div>
+</body>
+</html>            

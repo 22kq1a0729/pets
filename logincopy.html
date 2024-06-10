@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <title>Bootstrap Example</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    .container {
+  position: relative;
+  text-align: left;
+  color: rgb(252, 240, 240);}
+ .abc{
+  position: absolute;
+  top: 70px;
+  left: 140px;
+  font-size: larger;
+  font-weight: 1000px;
+  text-align: center;}
+  .container1{
+  position: absolute;
+  top: 300px;
+  left: 190px;
+  font-size: larger;
+}
+.top-right {
+  position: absolute;
+  top: 120px;
+  right: 52px;
+  color: blue;
+}
+.centered {
+  position: absolute;
+  top: 200px;
+  right: 2px;
+  color: black;
+}
+.button{
+            width:200px;
+            height:30px;
+            background:rgb(87,172,225);
+            border:none;
+            outline:none;
+            cursor:pointer;
+            color:white;
+            font-weight:500;
+        }
+        .box{
+            border:3px solid;
+            border-color: rgb(223,206,206);
+            width:450px;
+            height: 250px;
+            background: rgba(222,196,196,0.25);
+            backdrop-filter: blur(5px);
+            margin-top:15%;
+        }label {
+            display: block;
+            margin-bottom: 5px;
+        }
+</style>
+<script>
+ function loginValidation() {
+            
+            
+                      
+            var password = document.myform.password.value;
+            var myemail=document.myform.email.value;  
+var atposition=myemail.indexOf("@");  
+var dotposition=myemail.lastIndexOf(".");  
+if (atposition<1 || dotposition<atposition+2 || dotposition+2>=myemail.length){  
+  alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+  return false;  
+                     } else if (password.length<6){
+                        alert("Password Must be 6 letters")
+                        return false;
+                     }  else{
+                     return true ;}                
+                  }           
+</script>
+    <body>
+           <div class="container">
+                   <img src="login.jpg" class="img-rounded" alt="There is No Image" width="534" height="736">
+                   <div class="abc"><img src="red.jpg" width="50" height="50"><h2>Welcome to Pet Place</h2><p>We Welcome Your Family</p></div><br>
+                   <center>  <div class="container1"><h3>We Welcome You,<br> With Our Open <br>Hearts And Paws</h3><br>
+                    <img src="teddy.jpg" width="200" height="200"></div></center><br>
+    
+                    <div class="top-right"><h1>Login to continue</h1></div><br>
+                    <div class="centered"><h4>Don't  have  an account with us?<a href="signup.html"> Click here to register</a></h4>
+                        <center>
+                            <div class="box">
+                              <form name="myform" action="loginthanks.html" 	onsubmit="return loginValidation(this);">
+ 
+                                    <h4><a href="logincopy.html">Login With Password </a> <a href="loginpass.html">   Login With OTP</a></h4>
+                                  <br> <br><input type="email" name="email" placeholder="PhoneNo/Email id" autofocus><br><br>
+                                  <br> <input type="password" name="password" placeholder="password"><br><br>
+                                    <br><button type="submit" class="button">Login</button>
+                                   
+                                </form>
+                            </div>
+                        </center>
+</div>
+</body>
+</html>
+</div>
+</body>
+</html>

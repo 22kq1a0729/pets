@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+            max-width: 1200px;
+            margin: 20px auto;
+            flex-wrap: wrap;
+        }
+
+        .gallery-item {
+            flex: 1;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .gallery-text {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="cat.jpg" alt="Cat" class="gallery-image">
+            <p class="gallery-text">This is a cute cat.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="dog.jpg" alt="Dog" class="gallery-image">
+            <p class="gallery-text">This is a happy dog.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="rabbit.jpg" alt="Rabbit" class="gallery-image">
+            <p class="gallery-text">This is a fluffy rabbit.</p>
+        </div>
+    </div>
+</body>
+</html>

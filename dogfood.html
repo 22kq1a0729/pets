@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Bootstrap Example</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    #corners2 {
+  border-radius: 25px;
+  border: 2px solid #dfe5d6;
+  padding: 20px; 
+  width: 250px;
+  height: 350px; 
+  background-color: rgb(249, 251, 252);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+body{
+    background-color: rgba(76, 218, 197, 0.358);
+}
+</style>
+    <body>
+        <div class="container"><center><h2>Select Your Pet</h2></center>
+        <div class="row">
+        <div class="column">
+          
+                  <div id="corners2">
+                   <img src="dogfood.jpg" class="img-rounded" alt="There is No Image" width="204" height="236">
+                 <center> <a href="petfood.html"><h4>Dog</h4></a></center>
+                </div>
+                </div>
+                <div class="column">
+                    <div id="corners2">
+                    <img src="cat1.jpg" class="img-rounded" alt="There is No Image" width="204" height="236">
+                  <center>  <h4>Cat</h4></center>
+                 </div>
+           </div>
+           <div class="column">
+            <div id="corners2">
+            <img src="bird.jpg" class="img-rounded" alt="There is No Image" width="204" height="236">
+          <center>  <h4>Bird</h4></center>
+         </div>
+   </div>
+   <div class="column">
+    <div id="corners2">
+    <img src="smallanimal.jpg" class="img-rounded" alt="There is No Image" width="204" height="236">
+  <center>  <h4>Small Animal</h4></center>
+ </div>
+</div>
+           </div>
+        </div>
+    </body>   
+</html>
